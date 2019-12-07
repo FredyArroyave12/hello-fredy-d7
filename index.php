@@ -2,7 +2,8 @@
  <head>
   <title>Prueba de PHP Heroku</title>
  </head>
- <body>
- <?php echo '<p>hola fredy</p>' ; ?>
+ <body><?php
+echo '¡Hola ' . htmlspecialchars($_GET["name"]) . '!';
+?>
  </body>
 </html>
